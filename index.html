@@ -13,7 +13,38 @@
     <title>Home</title>
   </head>
   <body>
-    <h1><a href="timeline.html">Photo Timeline</a></h1>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="timeline.html"
+                >Photo Timeline</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <div id="carouselExampleIndicators" class="carousel slide">
       <div class="carousel-indicators">
         <button
@@ -38,15 +69,17 @@
         ></button>
       </div>
       <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="pics/home_pic.jpg" class="d-block w-100" alt="..." />
-        </div>
-        <div class="carousel-item">
-          <img src="pics/home_pic2.jpg" class="d-block w-100" alt="..." />
-        </div>
-        <div class="carousel-item">
-          <img src="pics/home_pic3.jpg" class="d-block w-100" alt="..." />
-        </div>
+        <picture>
+          <div class="carousel-item active">
+            <img src="pics/home_pic.jpg" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="pics/home_pic2.jpg" " alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="pics/home_pic3.jpg" " alt="..." />
+          </div>
+        </picture>
       </div>
       <button
         class="carousel-control-prev"
