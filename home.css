@@ -1,7 +1,27 @@
-#carouselExampleIndicators .carousel-item img {
-  object-fit: contain;
-  object-position: center;
-  overflow: hidden;
-  height: 97vh;
-  width: auto;
+* {
+  margin: 0;
+  padding: 0;
 }
+
+/* make images fill height and width or clip */
+.carousel-item > img {
+  object-fit: cover;
+  height: calc(100vh - 56px);
+  width: 100%;
+}
+/* 
+.carousel {
+  height: calc(100vh - 56px);
+}
+.carousel-inner,
+.carousel-item {
+  height: 100%;
+}
+.carousel-item {
+  background-color: #000;
+}
+.carousel-item img {
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+} */
